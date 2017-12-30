@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Glory of Guntur</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css"
+	media="all" />
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/easy-responsive-tabs.css" rel='stylesheet'
+	type='text/css' />
+<link href="css/owl.carousel.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript">  
+function validateform()
+{  
+	var name=document.myform.name.value;  
+	var x=document.myform.email.value;  
+	var atposition=x.indexOf("@");  
+	var dotposition=x.lastIndexOf("."); 
+	var txt=document.myform.txt.value;
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;
+}	 
+		else if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length)
+		{
+		alert("Please enter a valid e-mail address");
+		 return false;
+		}  
+		else if(txt==null || txt=="")
+		{
+			alert("please enter some text here");
+			 return false;
+			}
+}
+</script>
+
+
+</head>
+<body>
+	<!-- banner -->
+	<div class="banner about-banner-w3ls " id="home">
+		<!-- header -->
+		<header>
+			<div class="container-fluid">
+				<div class="w3-logo">
+					<h1>
+						<a href="Main.html">Glory Of Guntur</a>
+					</h1>
+				</div>
+				<!-- navigation -->
+				<nav class="navbar navbar-default ayanEffects ayanHoverEffect_7">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed"
+							data-toggle="collapse"
+							data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span> <span
+								class="icon-bar"></span> <span class="icon-bar"></span> <span
+								class="icon-bar"></span>
+						</button>
+
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse"
+						id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li><a href="index.html">Guntur</a></li>
+							<li><a href="history.html">History</a></li>
+							<li><a href="governance.html">Governance</a></li>
+							<li><a href="profile.html">Profile</a></li>
+							<li><a href="economy.html">Economy</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a class="active" href="contact.html">Map</a></li>
+						</ul>
+
+					</div>
+					<!-- /.navbar-collapse -->
+
+				</nav>
+				<div class="clearfix"></div>
+				<!-- //navigation -->
+			</div>
+		</header>
+		<!-- //header -->
+		<h2>Map</h2>
+	</div>
+	<!-- //banner -->
+	<!-- contact -->
+	<!-- contact -->
+
+	<!-- //contact -->
+	<!-- Footer -->
+	<div class="map-w3-agileits">
+		<iframe width="600" height="450" frameborder="0" style="border: 0"
+			src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJhXd4sVx1SjoRlObxkN2ZeZ8&key=AIzaSyA6hFl69JGAO1JfS2-t_rrPndGLDpXMNag"
+			allowfullscreen></iframe>
+	</div>
+	<div class="contact-page-w3ls">
+		<div class="container" style="margin-bottom: 70px;">
+			<h5 class="title-w3">Leave your Comment</h5>
+
+			<div class="contact-info-w3ls">
+				<div class="contact-left-w3layouts">
+					<div class="contact-w3ls">
+						<img src="images/contact1.jpg" alt="img">
+
+						<div class="clearfix"></div>
+					</div>
+					<div class="contact-w3ls">
+						<img src="images/contact2.jpg" alt="img">
+
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="contact-right-w3layouts">
+					<!--<form action="#" method="post">
+			<input type="text" name="your name" placeholder="YOUR NAME" required="">
+			<input type="email" name="your email" placeholder="YOUR EMAIL" required="">
+			<textarea  name="your message" placeholder="YOUR MESSAGE" required=""></textarea>
+			<input type="submit" value="SEND MESSAGE">
+		</form>-->
+					<form name="myform" method="post" onsubmit="return validateform()" action="sendmail.jsp">
+						<input type="text" name="name" placeholder="YOUR NAME">
+						<input type="email" name="email" placeholder="YOUR EMAIL">
+						<textarea name="txt" placeholder="YOUR MESSAGE"></textarea>
+						<input type="submit" value="SEND MESSAGE">
+					</form>
+				</div>
+				<div class="clearfix"></div>
+				<div class="social-agileits-w3layouts">
+
+
+					<div class="social-agileits-w3layouts">
+
+				<div class="row">
+					<div class="col-lg-6 left">Glory of Guntur</div>
+					<div class="col-lg-6 right">
+						Designed by <span style="color: red;">Ug Software Solutions</span>
+						<p>
+							Developed By <span style="color: blue;"> Gandhi</span>
+						</p>
+					</div>
+
+				</div>
+				
+
+			</div>
+
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+
+
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+	<!-- start-smoth-scrolling -->
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+	<!-- //here ends scrolling icon -->
+	<!--js for bootstrap working-->
+	<script src="js/bootstrap.js"></script>
+	<!-- //for bootstrap working -->
+
+</body>
+</html>
